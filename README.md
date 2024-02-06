@@ -6,11 +6,11 @@ export default function Page() {
   const [yesPressed, setYesPressed] = useState(false);
   const yesButtonSize = noCount * 20 + 16;
 
-  const handleNoClick = () => {
+  const handleNoClick = (yes) => {
     setNoCount(noCount + 1);
   };
 
-  const getNoButtonText = () => {
+  const getNoButtonText = (no) => {
     const phrases = [
       "No",
       "Are you sure?",
